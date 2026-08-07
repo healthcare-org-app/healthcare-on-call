@@ -1,0 +1,11 @@
+name: on-call-service
+port: 8205
+lang: python
+description: "on-call-service \u2014 domain: providers"
+http_deps:
+- providers-service
+- provider-schedule-service
+- audit-log-service
+publishes:
+- audit.event
+subscribes: []
